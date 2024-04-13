@@ -282,3 +282,5 @@ Summary of operations time complexity:
 - Remove - O(1): The Remove operation removes a node from the cache. Similar to the Add operation, the time complexity of removing a node is O(1). It involves updating the pointers of adjacent nodes in the linked list and deleting the corresponding entry from the hash map, both of which are constant-time operations.
 
 - Display - O(n): The Display operation traverses the entire linked list to print its contents. In the worst-case scenario, where the entire linked list needs to be traversed, the time complexity is O(n), where n is the number of elements in the linked list. This complexity arises from the need to visit each node in the list once to display its value.
+
+Project includes tests and benchmark for described implementation.

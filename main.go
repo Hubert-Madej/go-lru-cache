@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	CACHE_SIZE  = 1000_000_00
+	CACHE_SIZE  = 5
 	dataSetSize = 1000_000_00
 )
 
@@ -123,14 +123,14 @@ func createLinkedList() LinkedList {
 }
 
 func main() {
-	// elementsToCache := []string{"Terry", "Tee", "Dog", "Terry", "Car", "Terry"}
+	elementsToCache := []string{"Terry", "Tee", "Dog", "Terry", "Car", "Terry"}
 
-	// cache := createCache()
+	cache := createCache()
 
-	// for _, e := range elementsToCache {
-	// 	cache.Check(e)
-	// 	cache.Display()
-	// }
+	for _, e := range elementsToCache {
+		cache.Check(e)
+		cache.Display()
+	}
 
 	benchmarkLRUCache()
 }
